@@ -1,0 +1,41 @@
+﻿<h1>Present Value</h1>
+
+<table class="well">    
+    <tr>
+        <td><h4>Cash Flow (C)</h4></td>
+        <td><input id="pv-cash-flow" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Initial Investment (if any)</h4></td>
+        <td><input id="pv-initial-investment" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Yield (y)</h4></td>
+        <td><input id="pv-yield" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Maturity in Periods (M)</h4></td>
+        <td><input id="pv-maturity" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Times compounded per period (m)</h4></td>
+        <td><input id="pv-compounded" /></td>
+    </tr>
+
+    <tr>
+        <td><h4>Net Present Value (P)</h4></td>
+        <td><input id="pv-present-value" /></td>
+    </tr>
+</table>
+
+<button type="button" id="reset-btn" class="btn btn-danger">Reset Values</button>
+
+<h5>NOTE: You can use different cash flows for each year by separating them by commas. If there are fewer cash flows than "M", the last cash flow listed will be repeated until "M" is reached.</h5>
+
+@Scripts.Render("~/Scripts/present-value-calculator.js")
+
+<h5>"m" and "M" have hidden, default values of 1 if you choose to not enter your own values for them.</h5>

@@ -1,0 +1,39 @@
+﻿<h1>Bonds</h1>
+
+<table class="well">
+    <tr>
+        <td><h4>Face Value (F)</h4></td>
+        <td><input id="bonds-face-value" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Coupon Payment (C)</h4></td>
+        <td><input id="bonds-coupon-payment" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Yield (y)</h4></td>
+        <td><input id="bonds-yield" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Maturity in Periods (M)</h4></td>
+        <td><input id="bonds-maturity" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Times compounded per period (m)</h4></td>
+        <td><input id="bonds-compounded" /></td>
+    </tr>
+
+    <tr>
+        <td><h4>Principal (P)</h4></td>
+        <td><input id="bonds-principal" /></td>
+    </tr>
+</table>
+
+<button type="button" id="reset-btn" class="btn btn-danger">Reset Values</button>
+
+@Scripts.Render("~/Scripts/bond-calculator.js")
+
+<h5>"m" and "M" have hidden, default values of 1 if you choose to not enter your own values for them.</h5>

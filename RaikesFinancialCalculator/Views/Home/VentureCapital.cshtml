@@ -1,0 +1,49 @@
+﻿<h1>Venture Capital</h1>
+
+<table class="well">
+    <tr>
+        <td><h4>Number of Rounds</h4></td>
+        <td><input id="rounds" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Invested Funds</h4></td>
+        <td><input id="invested-funds" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Required ROI</h4></td>
+        <td><input id="req-roi" /></td>
+    </tr>
+        
+    <tr>
+        <td><h4>Years to exit</h4></td>
+        <td><input id="years-to-exit" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>P/E</h4></td>
+        <td><input id="pe" /></td>
+    </tr>
+    
+    <tr>
+        <td><h4>Earnings at Exit</h4></td>
+        <td><input id="earnings-at-exit" /></td>
+    </tr>
+    
+    <!--Output per round
+        Number of new shares
+        Total Shares
+        Share Price
+        Equity fractions-->
+    
+    <!--Output at exit
+        Share price
+        Total equity
+        fractional equity value
+        -->
+</table>
+
+<div id="container"></div>
+
+@Scripts.Render("~/Scripts/venture-capital-calculator.js")
